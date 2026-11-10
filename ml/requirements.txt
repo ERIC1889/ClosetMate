@@ -1,0 +1,18 @@
+torch>=2.4
+torchvision>=0.19
+Pillow>=10.0
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.5
+tqdm>=4.66
+
+# PyTorch → TFLite 직변환 (구 ai-edge-torch). spec 6.5 의 ONNX → onnx-tf 경로는
+# onnx-tf 가 최신 TF 와 호환되지 않아 폐기, Google 공식 도구로 대체했다.
+litert-torch>=0.9
+
+# 디버깅/시각화용 ONNX 산출물도 함께 생성한다.
+onnx>=1.16
+onnxscript>=0.7
+
+# 학습 추적 (선택)
+# wandb>=0.17

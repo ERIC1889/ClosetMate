@@ -1,0 +1,21 @@
+{
+  "name": "closetmate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI 옷장 매니저: 멀티모달(이미지/음성/시계열) + LLM(nano-first + mini fallback) + 전이학습(ResNet50/MobileNetV3) 기반 모바일 앱",
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "dev:mobile": "pnpm --filter mobile start",
+    "build:web": "pnpm --filter web build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@11.3.0",
+  "dependencies": {
+    "expo": "^56.0.5"
+  }
+}

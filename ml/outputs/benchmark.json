@@ -1,0 +1,32 @@
+[
+  {
+    "backbone": "mobilenet_v3_small",
+    "weights_path": "ml/outputs/mobilenet_v3_small_fashion.pth",
+    "weights_mb": 6.014260292053223,
+    "device": "cpu",
+    "warmup": 5,
+    "runs": 30,
+    "mean_ms": 30.82732626668682,
+    "median_ms": 30.85629099950893,
+    "p90_ms": 31.34887499982142,
+    "min_ms": 30.135832999803824,
+    "max_ms": 31.596083998010727,
+    "params_total": 1541431,
+    "params_trainable": 23575
+  },
+  {
+    "backbone": "resnet50",
+    "weights_path": "ml/outputs/resnet50_fashion.pth",
+    "weights_mb": 90.16285800933838,
+    "device": "cpu",
+    "warmup": 5,
+    "runs": 30,
+    "mean_ms": 20.44562919982127,
+    "median_ms": 20.489999998972053,
+    "p90_ms": 21.608416001981823,
+    "min_ms": 19.239249999372987,
+    "max_ms": 21.806166998430854,
+    "params_total": 23555159,
+    "params_trainable": 47127
+  }
+]

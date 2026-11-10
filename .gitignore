@@ -1,0 +1,91 @@
+# ──────────────────────────────────────────────
+# Node / pnpm
+# ──────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+dist/
+build/
+.next/
+.expo/
+.expo-shared/
+out/
+*.tsbuildinfo
+next-env.d.ts
+expo-env.d.ts
+
+# 루트는 pnpm 워크스페이스 — npm 락파일은 추적하지 않음
+/package-lock.json
+
+# ──────────────────────────────────────────────
+# Env / secrets
+# ──────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.jks
+*.mobileprovision
+
+# ──────────────────────────────────────────────
+# Logs
+# ──────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ──────────────────────────────────────────────
+# OS / IDE / AI tooling
+# ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo
+
+# ──────────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# ──────────────────────────────────────────────
+# ML — 대용량 산출물 / 데이터셋 (metrics.json, benchmark.json 만 추적)
+# ──────────────────────────────────────────────
+ml/data/
+ml/notebooks/
+ml/outputs/*.pth
+ml/outputs/*.onnx
+ml/outputs/*.onnx.data
+ml/outputs/*.tflite
+ml/outputs/tf_model/
+ml/wandb/
+
+# ──────────────────────────────────────────────
+# 런타임 업로드 / 로컬 전용 자료
+# ──────────────────────────────────────────────
+apps/web/public/uploads/
+docs/
+image_ex/
+
+# ──────────────────────────────────────────────
+# Vercel / Native builds
+# ──────────────────────────────────────────────
+.vercel/
+*.apk
+*.aab
+*.ipa
+ios/Pods/
+android/.gradle/
+android/build/
+android/app/build/
